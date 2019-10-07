@@ -28,4 +28,4 @@ Com o botão direito também é possível, só que ao invés de colocar, ele apa
 - [Gabe](https://github.com/ImGabe)
 - [DEIVINNI](https://github.com/DEIVINNI)
 - [Leovano - None](https://github.com/leovano)
-- [jooj]() (Liga dos Programadores)
+- [jooj](https://github.com/EduardoMCF) (Liga dos Programadores)
