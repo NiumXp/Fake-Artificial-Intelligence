@@ -152,7 +152,7 @@ class Monster:
                 direction = self.random_direction(walls)
                 if direction != None:
                     self.move_to(direction)
-                    sleep(self.delay)
+                sleep(self.delay)
 
         thread = Thread(target=timeout, name='MonsterBrain')
         thread.start()
