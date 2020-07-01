@@ -1,5 +1,9 @@
-# Fake-Artificial-Inteligence
-Um monstrinho que tem "inteligência" e tenta encontrar a saída do mapa proposto!
+# Fake-Artificial-Intelligence
+Um módulo para ajudar a criar um monstrinho que tem "inteligência" e tenta encontrar a saída do mapa proposto!
 
-# Demonstração
-![Apresentação do projeto](https://i.imgur.com/LpxiCXs.gif[/img])
+# Exemplos
+Utilizando o módulo só que no terminal!
+![terminal](images/terminal.gif)
+
+Utilizando o módulo só que utilizando a biblioteca Pyxel!
+![pyxel](images/pyxel.gif)
