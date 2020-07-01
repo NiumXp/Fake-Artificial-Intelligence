@@ -11,7 +11,7 @@ Utilizando o módulo e também a biblioteca Pyxel!
 No canto superior esquerdo há a posição antiga do monstro, na direita, há a sua posição atual do monstro.
 No canto inferior esquerdo, direção escolhida anteriormente, na direita, posição do mouse.
 
-No canto inferior direito, quando precionado shift ou os botões do mouse, aparece a posição do mouse no grid e a ação atual, seja "*Shift*" para quando for apertado shift e "*Editor*" para quando ele estiver usando o mouse.
+No canto inferior direito, quando pressionado shift ou os botões do mouse, aparece a posição do mouse no grid e a ação atual, seja "*Shift*" para quando for apertado shift e "*Editor*" para quando ele estiver usando o mouse.
 
 #### Como usar
 | Botão | Ação |
