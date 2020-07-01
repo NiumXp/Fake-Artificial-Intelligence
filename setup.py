@@ -6,6 +6,6 @@ setup(name="fake-artificial-intelligence",
       version="1.0.0",
       packages=["fakeAI"],
       license="MIT",
-      description="A module to create fake artificial intelligence!"
+      description="A module to create fake artificial intelligence!",
       python_requires=">=3.8"
 )
