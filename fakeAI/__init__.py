@@ -1,6 +1,7 @@
 from enum import IntEnum
 from typing import Tuple
 from collections.abc import Sequence
+from functools import reduce
 
 numbers = (0, 1, 2, 3)
 
@@ -38,6 +39,9 @@ class Monster:
     @property
     def move_functions(self) -> tuple:
         return [self.to_left, self.to_up, self.to_right, self.to_down]
+
+    def in_exit_cell(self) -> bool:
+        return self._map.cell(self._y, self._x) == CellType.EXIT
 
     def move_to(self, x: int, y: int):
         h = self._map.height - 1
@@ -129,20 +133,23 @@ class Grid:
             for _ in range(height)
         ]
 
+    def char(self, celltype: CellType) -> str:
+        return str(self._chars[celltype])
+
     def to_list(self, raw: bool=True) -> list:
-        if raw:
-            return self._inner
-        else:
-            return [map(lambda cell: self._chars[cell], line) for line in self._inner]
+        return self._inner
 
     @classmethod
     def from_list(cls, list_):
         obj = cls(list_)
         return obj
 
+    def render(self, line: str):
+        return reduce(lambda x, y: x + ' ' + self.char(y), line, '')
+
     def __str__(self):
-        grid = self.to_list(raw=False)
-        lines = [' '.join(map(str, line)) for line in grid]
+        grid = self.to_list()
+        lines = [self.render(line) for line in grid]
         return '\n'.join(lines)
 
     def spawn_monster(self, x: int, y: int) -> Monster:
